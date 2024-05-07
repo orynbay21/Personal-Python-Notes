@@ -1,0 +1,2 @@
+from main import send_request_to_our_server
+send_request_to_our_server.send()
