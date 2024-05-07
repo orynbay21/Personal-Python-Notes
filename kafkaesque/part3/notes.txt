@@ -1,0 +1,21 @@
+after writing down docker-compose.yml file
+run:
+1)docker-compose up -d in one terminal
+port for kafka ui:http://localhost:8080/
+2) run py consumer.py in a separate terminal
+3)run py producer.py in another terminal
+and watch as the message from producer appears on the consumer.py terminal
+
+
+offset last read item
+
+u can also start consumers in many terminals at the same time 
+when the second consumer gets connected, rebalance happens which is implemented by
+zookeeper
+after rebalance one consumer will be responsible for one particular partition that nobody else is
+responsible for and etc
+
+that is done so that 2 consumers wont be reading 1 message 2 times or more
+
+
+количество консюмеров в одной консюмер группе столько же сколько и количество партиций

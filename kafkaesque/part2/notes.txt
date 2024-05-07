@@ -1,0 +1,12 @@
+after writing down docker-compose.yml file
+run:
+1)docker-compose up -d in one terminal
+port for kafka ui:http://localhost:8080/
+2) run py consumer.py in a separate terminal
+3)run py producer.py in another terminal
+and watch as the message from producer appears on the consumer.py terminal
+
+
+offset last read item
+
+u can also start consumers in many terminals at the same time 
